@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Creative Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+  <nav>
+    <div class="logo">MyPortfolio</div>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="themeToggle" class="theme-toggle">🌓</button>
+  </nav>
+  
+
+<section id="hero" class="hero">
+  <h1>Hi, I'm Suraj Gupta</h1>
+  <p>
+    I'm a Full-Stack Developer specializing in crafting performant frontend experiences and scalable backend systems.
+    I build modern web apps using HTML, CSS, JavaScript, React, Node.js, MongoDB, and more.
+  </p>
+  <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get in Touch</button>
+</section>
+
+<section id="portfolio" class="section">
+  <h2>Real-World Projects</h2>
+  <div class="portfolio-grid">
+    <div class="card">
+      <h3>DevConnect</h3>
+      <p>A social platform for developers to network and share projects. Built with MERN stack and JWT auth.</p>
+    </div>
+    <div class="card">
+      <h3>TaskMaster Pro</h3>
+      <p>A full-stack productivity app with real-time task collaboration using WebSockets and MongoDB.</p>
+    </div>
+    <div class="card">
+      <h3>Foodiez</h3>
+      <p>An online food delivery system with admin dashboard, Stripe payments, and REST API.</p>
+    </div>
+    <div class="card">
+      <h3>CodeCamp</h3>
+      <p>Interactive coding challenges with user auth, leaderboard, and syntax highlighting via PrismJS.</p>
+    </div>
+    <div class="card">
+      <h3>MyPortfolio (this site!)</h3>
+      <p>A creative, responsive portfolio site to showcase full-stack skills and contact info.</p>
+    </div>
+    <div class="card">
+      <h3>WeatherWise</h3>
+      <p>A weather forecasting app using OpenWeatherMap API and dynamic theming based on conditions.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+
+    <!-- HTML -->
+    <div class="skill" style="--percent:90">
+      <svg viewBox="0 0 120 120">
+        <circle class="skill-bg" cx="60" cy="60" r="54" />
+        <circle class="skill-fg" cx="60" cy="60" r="54" />
+      </svg>
+      <div class="skill-label">HTML</div>
+      <div class="skill-percent">90%</div>
+    </div>
+
+    <!-- CSS -->
+    <div class="skill" style="--percent:85">
+      <svg viewBox="0 0 120 120">
+        <circle class="skill-bg" cx="60" cy="60" r="54" />
+        <circle class="skill-fg" cx="60" cy="60" r="54" />
+      </svg>
+      <div class="skill-label">CSS</div>
+      <div class="skill-percent">85%</div>
+    </div>
+
+    <!-- JavaScript -->
+    <div class="skill" style="--percent:80">
+      <svg viewBox="0 0 120 120">
+        <circle class="skill-bg" cx="60" cy="60" r="54" />
+        <circle class="skill-fg" cx="60" cy="60" r="54" />
+      </svg>
+      <div class="skill-label">JavaScript</div>
+      <div class="skill-percent">80%</div>
+    </div>
+
+    <!-- React -->
+    <div class="skill" style="--percent:85">
+      <svg viewBox="0 0 120 120">
+        <circle class="skill-bg" cx="60" cy="60" r="54" />
+        <circle class="skill-fg" cx="60" cy="60" r="54" />
+      </svg>
+      <div class="skill-label">React</div>
+      <div class="skill-percent">85%</div>
+    </div>
+
+    <!-- Node.js -->
+    <div class="skill" style="--percent:80">
+      <svg viewBox="0 0 120 120">
+        <circle class="skill-bg" cx="60" cy="60" r="54" />
+        <circle class="skill-fg" cx="60" cy="60" r="54" />
+      </svg>
+      <div class="skill-label">Node.js</div>
+      <div class="skill-percent">80%</div>
+    </div>
+
+    <!-- Express.js -->
+    <div class="skill" style="--percent:75">
+      <svg viewBox="0 0 120 120">
+        <circle class="skill-bg" cx="60" cy="60" r="54" />
+        <circle class="skill-fg" cx="60" cy="60" r="54" />
+      </svg>
+      <div class="skill-label">Express</div>
+      <div class="skill-percent">75%</div>
+    </div>
+
+    <!-- MongoDB -->
+    <div class="skill" style="--percent:70">
+      <svg viewBox="0 0 120 120">
+        <circle class="skill-bg" cx="60" cy="60" r="54" />
+        <circle class="skill-fg" cx="60" cy="60" r="54" />
+      </svg>
+      <div class="skill-label">MongoDB</div>
+      <div class="skill-percent">70%</div>
+    </div>
+
+    <!-- Git & GitHub -->
+    <div class="skill" style="--percent:90">
+      <svg viewBox="0 0 120 120">
+        <circle class="skill-bg" cx="60" cy="60" r="54" />
+        <circle class="skill-fg" cx="60" cy="60" r="54" />
+      </svg>
+      <div class="skill-label">Git & GitHub</div>
+      <div class="skill-percent">90%</div>
+    </div>
+
+    <!-- API / REST -->
+    <div class="skill" style="--percent:80">
+      <svg viewBox="0 0 120 120">
+        <circle class="skill-bg" cx="60" cy="60" r="54" />
+        <circle class="skill-fg" cx="60" cy="60" r="54" />
+      </svg>
+      <div class="skill-label">REST APIs</div>
+      <div class="skill-percent">80%</div>
+    </div>
+
+    <!-- Deployment -->
+    <div class="skill" style="--percent:70">
+      <svg viewBox="0 0 120 120">
+        <circle class="skill-bg" cx="60" cy="60" r="54" />
+        <circle class="skill-fg" cx="60" cy="60" r="54" />
+      </svg>
+      <div class="skill-label">Deployment</div>
+      <div class="skill-percent">70%</div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- <section id="contact" class="section">
+  <h2>Contact Me</h2>
+  <form class="contact-form" id="contactForm" onsubmit="event.preventDefault(); alert('Thanks for reaching out!');">
+  <label for="name">Name</label>
+  <input id="name" type="text" placeholder="Your name" required />
+  <input type="text" name="botField" style="display:none;" tabindex="-1" autocomplete="off" />
+
+  
+  <label for="email">Email</label>
+  <input id="email" type="email" placeholder="Your email" required />
+  
+  <label for="message">Message</label>
+  <textarea id="message" rows="5" placeholder="Your message" required></textarea>
+  
+  <button type="submit">Send Message</button>
+</form> -->
+<!-- <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+  <label for="name">Name</label>
+  <input id="name" type="text" name="name" placeholder="Your name" required />
+
+  <label for="email">Email</label>
+  <input id="email" type="email" name="email" placeholder="Your email" required />
+
+  <label for="message">Message</label>
+  <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+
+  <button type="submit">Send Message</button>
+  <p id="form-status" style="margin-top:10px;font-size:0.9rem;"></p>
+</form> -->
+<form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+  
+  <!-- REQUIRED: Web3Forms Access Key -->
+  <input type="hidden" name="access_key" value="6b75af58-1305-49b5-b25c-5a8284b4a18b">
+
+  <label for="name">Name</label>
+  <input id="name" type="text" name="name" placeholder="Your name" required />
+
+  <label for="email">Email</label>
+  <input id="email" type="email" name="email" placeholder="Your email" required />
+
+  <label for="message">Message</label>
+  <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+
+  <button type="submit">Send Message</button>
+  <p id="form-status" style="margin-top:10px;font-size:0.9rem;"></p>
+</form>
+
+
+
+</section>
+
+<footer>
+  <p>&copy; 2025 Suraj Gupta. Built with ❤️ using HTML, CSS, JS, and Node.js.</p>
+  <p>📫 <a href="suraj955955@gmail.com">suraj955955@gmail.com</a> | 🌐 <a href="https://Portfolio.dev" target="_blank">Portfolio.dev</a></p>
+  <p>
+    <a href="https://github.com/Suraj-Gupta-06" target="_blank">GitHub</a> |
+    <a href="https://linkedin.com/in/suraj-gupta-" target="_blank">LinkedIn</a> |
+    <a href="https://twitter.com/surajgupta06" target="_blank">Twitter</a>
+  </p>
+</footer>
+<script src="main.js" defer></script>
+</body>
+</html>
