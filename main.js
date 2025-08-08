@@ -110,6 +110,11 @@ form.addEventListener('submit', async function (event) {
   }
 });
 
+// Mobile menu toggle
+document.querySelector('.menu-toggle').addEventListener('click', () => {
+  document.querySelector('nav').classList.toggle('active');
+});
+
 
 // ==== CONTACT FORM (Formspree.io) ====
 

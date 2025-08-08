@@ -383,3 +383,82 @@ button:hover ~ .cursor,
 /* ---------------- Utility helpers ---------------- */
 .u-center { display:flex; justify-content:center; align-items:center; }
 .hidden { display:none !important; }
+
+
+/* ==================== MOBILE RESPONSIVE ENHANCEMENTS ==================== */
+
+/* 📌 Navbar - Hamburger Menu for Small Screens */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background: rgba(0, 0, 0, 0.85);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 999;
+  }
+
+  nav.active ul {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* 📌 Hero Section Scaling */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .hero p {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+}
+
+/* 📌 Skills Section - Better Touch Experience */
+@media (max-width: 768px) {
+  .skills-grid {
+    gap: 20px;
+    padding-bottom: 15px;
+  }
+}
+
+/* 📌 Portfolio Cards Stack */
+@media (max-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 📌 Contact Form Touch-Friendly */
+@media (max-width: 600px) {
+  .contact-form {
+    padding: 15px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1rem;
+  }
+  .contact-form button {
+    width: 100%;
+  }
+}
