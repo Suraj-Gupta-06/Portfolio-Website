@@ -384,6 +384,7 @@ button:hover ~ .cursor,
 .u-center { display:flex; justify-content:center; align-items:center; }
 .hidden { display:none !important; }
 
+
 /* ---------- EXTRA RESPONSIVE & DECORATIVE ENHANCEMENTS ---------- */
 
 /* Whiskers (decorative corner lines) for sections & cards */
@@ -448,6 +449,21 @@ button:hover ~ .cursor,
   to { left: 125%; }
 }
 
+/* Mobile-first fine tuning */
+@media (max-width: 480px) {
+  .hero { padding: 40px 12px; height: auto; }
+  .hero h1 { font-size: 1.8rem; }
+  .hero p { font-size: 0.95rem; line-height: 1.4; }
+  nav ul { gap: 6px; }
+  nav ul li { font-size: 0.95rem; }
+  .portfolio-grid { grid-template-columns: 1fr; gap: 18px; }
+  .skills-grid { gap: 16px; padding: 10px 0; }
+  .skill { width: 85px; }
+  .skill svg { width: 85px; height: 85px; }
+  footer { font-size: 0.85rem; padding: 15px; }
+}
+
+
 /* ---------- MOBILE NAVBAR RESPONSIVENESS ---------- */
 .hamburger {
   display: none;
@@ -485,21 +501,10 @@ button:hover ~ .cursor,
   display: flex;
   gap: 30px;
 }
-
 @media (max-width: 768px) {
-  nav {
-    padding: 12px 18px;
-    flex-direction: row;           /* Keep logo + hamburger + toggle in one row */
-    align-items: center;
-    justify-content: space-between;
-    gap: 0;
-    position: relative;            /* So dropdown can position under it */
+  .hamburger {
+    display: flex;
   }
-
-  nav .logo {
-    flex: 1;
-  }
-
   .menu {
     position: absolute;
     top: 100%;
@@ -515,18 +520,15 @@ button:hover ~ .cursor,
     transform: translateY(-10px);
     transition: all 0.3s ease;
   }
-
   .menu.show {
-    max-height: 300px;
+    max-height: 300px; /* enough for all links */
     opacity: 1;
     transform: translateY(0);
   }
-
   .menu li {
     text-align: center;
     width: 100%;
   }
-
   .menu a {
     display: block;
     padding: 10px 0;
@@ -535,31 +537,7 @@ button:hover ~ .cursor,
     text-decoration: none;
     transition: background 0.25s;
   }
-
   .menu a:hover {
     background: rgba(35, 166, 213, 0.2);
   }
-
-  .hamburger {
-    display: flex;
-    margin-right: 10px;
-  }
-
-  #themeToggle {
-    margin-left: 8px;
-  }
-}
-
-/* Mobile-first fine tuning */
-@media (max-width: 480px) {
-  .hero { padding: 40px 12px; height: auto; }
-  .hero h1 { font-size: 1.8rem; }
-  .hero p { font-size: 0.95rem; line-height: 1.4; }
-  nav ul { gap: 6px; }
-  nav ul li { font-size: 0.95rem; }
-  .portfolio-grid { grid-template-columns: 1fr; gap: 18px; }
-  .skills-grid { gap: 16px; padding: 10px 0; }
-  .skill { width: 85px; }
-  .skill svg { width: 85px; height: 85px; }
-  footer { font-size: 0.85rem; padding: 15px; }
 }

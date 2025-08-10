@@ -52,7 +52,10 @@ const observer = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.2 });
 
-sections.forEach(sec => observer.observe(sec));
+sections.forEach(sec => {
+  sec.classList.add("hidden");
+  observer.observe(sec);
+});
 
 // ===== Skills Animation on View =====
 const skills = document.querySelectorAll(".skill");
@@ -116,6 +119,11 @@ form.addEventListener('submit', async function (event) {
   }
 });
 
+// // Mobile menu toggle
+// document.querySelector('.menu-toggle').addEventListener('click', () => {
+//   document.querySelector('nav').classList.toggle('active');
+// });
+
 const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('.menu');
 
@@ -141,6 +149,10 @@ document.querySelectorAll('.menu a').forEach(link => {
 // const statusEl = document.getElementById('form-status');
 
 // form.addEventListener('submit', async function (event) {
+  if (!form.action || form.action.trim() === "") {
+    showToast("Form action is not set. Please configure the form endpoint.", false);
+    return;
+  }
 //   event.preventDefault();
 //   statusEl.textContent = "Sending...";
   

@@ -38,26 +38,30 @@
 </head>
 <body>
 
-  <nav>
-    <div class="logo">MyPortfolio</div>
-    <ul>
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <button id="themeToggle" class="theme-toggle">🌓</button>
-    <div class="menu-toggle">☰</div>
-  </nav>
-  
+<nav>
+  <div class="logo">MyPortfolio</div>
+  <ul class="menu">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <button id="themeToggle" class="theme-toggle">🌓</button>
+</nav>
 
+  
 <section id="hero" class="hero">
   <h1>Hi, I'm Suraj Gupta</h1>
   <p>
     I'm a Full-Stack Developer specializing in crafting performant frontend experiences and scalable backend systems.
     I build modern web apps using HTML, CSS, JavaScript, React, Node.js, MongoDB, and more.
   </p>
-  <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get in Touch</button>
+  <button class="btn-primary" onclick="document.getElementById('contactForm').scrollIntoView({behavior:'smooth'})">Get in Touch</button>
 </section>
 
 <section id="portfolio" class="section">
@@ -198,9 +202,10 @@
 </section>
 
 
-<!-- <section id="contact" class="section">
-  <h2>Contact Me</h2>
-  <form class="contact-form" id="contactForm" onsubmit="event.preventDefault(); alert('Thanks for reaching out!');">
+<section id="contact" class="section">
+<h2>Contact Me</h2>
+<!--  
+<form class="contact-form" id="contactForm" onsubmit="event.preventDefault(); alert('Thanks for reaching out!');">
   <label for="name">Name</label>
   <input id="name" type="text" placeholder="Your name" required />
   <input type="text" name="botField" style="display:none;" tabindex="-1" autocomplete="off" />
@@ -213,8 +218,10 @@
   <textarea id="message" rows="5" placeholder="Your message" required></textarea>
   
   <button type="submit">Send Message</button>
-</form> -->
-<!-- <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+</form> 
+-->
+<!-- 
+<form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
   <label for="name">Name</label>
   <input id="name" type="text" name="name" placeholder="Your name" required />
 
@@ -226,7 +233,10 @@
 
   <button type="submit">Send Message</button>
   <p id="form-status" style="margin-top:10px;font-size:0.9rem;"></p>
-</form> -->
+</form> 
+-->
+
+
 <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
   
   <!-- REQUIRED: Web3Forms Access Key -->
