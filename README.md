@@ -56,11 +56,11 @@ Portfolio-Website/
 ---
 
 ## 📬 Connect With Me
-<p align="center">
-Email    : suraj955955@gmail.com
-GitHub   : https://github.com/Suraj-Gupta-06
-LinkedIn : https://linkedin.com/in/suraj-gupta-
-</p>
+
+- ***Email***    : suraj955955@gmail.com
+- ***GitHub***   : https://github.com/Suraj-Gupta-06
+- ***LinkedIn*** : https://linkedin.com/in/suraj-gupta-
+
 
 ---
 
